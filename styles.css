@@ -1,0 +1,213 @@
+@import url("whitespace-reset.css");
+
+* {
+  box-sizing: border-box;
+}
+body {
+  background: #2f2840 url("images/bg_body.gif") 0 0 repeat;
+  font: normal 20px Helvetica, Arial, sans-serif;
+  text-align: center;
+  color: #45494d;
+  line-height: 1.5em;
+}
+header h1 {
+  margin: 80px 0 100px 0;
+}
+header h1 a {
+  display: inline-block;
+  width: 298px;
+  height: 243px;
+  text-indent: -9999px;
+  background: transparent url("images/logo.png") 0 0 no-repeat;
+}
+
+nav li {
+  display: inline;
+  font-size: 26px;
+}
+nav {
+  padding-bottom: 40px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #cacaca;
+  margin: 0 45px 50px 45px;
+  text-transform: uppercase;
+}
+.active {
+  color: #6ab2f5;
+  font-weight: bold;
+}
+h2::before,
+h2::after {
+  display: inline-block;
+  content: "\2022";
+  padding: 30px;
+  font-size: 40px;
+}
+main {
+  background: #fff;
+  padding-top: 60px;
+}
+.column {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+article {
+  padding: 30px 0 30px 0;
+}
+p {
+  padding: 0 100px 50px 100px;
+}
+article figure img {
+  width: 100%;
+  display: block;
+}
+p {
+  font-weight: 200;
+}
+h2 {
+  font-size: 36px;
+}
+h3 {
+  padding-bottom: 28px;
+  color: #3e59b2;
+}
+footer {
+  background-color: #e7e7e7;
+  color: #b2b2b2;
+  padding: 80px 0;
+}
+footer p {
+  padding-bottom: 40px;
+}
+footer li {
+  display: inline-block;
+  padding: 0 62px;
+}
+footer li a {
+  display: block;
+  width: 46px;
+  height: 46px;
+  text-indent: 9999px;
+  overflow: hidden;
+  background: transparent url("images/icons_social-media.png") 0 0 no-repeat;
+}
+
+footer a.facebook {
+  background-position: 0 -46px;
+}
+footer a.email {
+  background-position: 0 -92px;
+}
+footer a.instagram {
+  background-position: 0 100%;
+}
+.team li {
+  display: inline-block;
+  margin: 30px;
+}
+.team li a {
+  text-decoration: none;
+  color: #3e59b2;
+  font-weight: 300;
+  font-size: 24px
+}
+.team img {
+  padding-bottom: 5px;
+  display: block;
+}
+.teampage {
+  padding-bottom: 230px;
+}
+@media (max-width: 875px) {
+  .team li {
+    width: 40%;
+    padding: 0 0 30px 0;
+  }
+  .team li img {
+    margin: 0 auto 25px auto;
+  }
+}
+@media (max-width: 768px) {
+  body {
+    padding-top: 65px;
+  }
+  header h1 a {
+    width: 223px;
+    height: 182px;
+    background-size: cover;
+    }
+  header img {
+    width: 100%;
+  }
+  nav {
+    padding-bottom: 20px;
+  }
+  main {
+    padding-top: 50px;
+  }
+  article {
+    padding-bottom: 50px;
+  }
+  article p {
+    padding: 0 40px;
+    text-align: justify;
+  }
+  footer li {
+    padding: 0 32px;
+  }
+  footer {
+    padding: 35px 0;
+  }
+}
+@media (max-width: 480px) {
+  body {
+    padding-top: 0;
+    font-size: 16px;
+  }
+  header {
+    padding: 20px 15px;
+  }
+  header h1 {
+    float: left;
+    margin: 30px 0 0 0;
+    font-size: 20px;
+  }
+  header h1 a {
+    width: auto;
+    padding: 10px 0 0 55px;
+    height: 40px;
+    text-indent: 0;
+    color: #fff;
+    background-size: 90px auto;
+    background-position: -20px 0;
+    text-decoration: none;
+  }
+  nav {
+    text-align: right;
+    padding-bottom: 0;
+  }
+  nav li {
+    display: block;
+    font-size: 16px;
+    padding: 5px 0;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  h2::before,
+  h2::after {
+    vertical-align: -5px;
+  }
+  footer li {
+    padding: 0 18px;
+  }
+  footer p {
+    padding: 10px 25px;
+  }
+  article.teampage {
+    padding-bottom: 10px;
+  }
+}
